@@ -1,34 +1,49 @@
-package Calculator40;
+package com.github.javabaz;
 
 import java.util.Scanner;
 
 public class Calculator40 {
-        public static void main(String[] args) {
-            Scanner s = new Scanner(System.in);
-            System.out.print("Enter first number: ");
-            float num1 = (float) s.nextFloat();
 
-            System.out.print("Enter operator (+, -, *, /): ");
-            char operator = s.next().charAt(0);
-            System.out.print("Enter second number: ");
-            float num2 = (float) s.nextFloat();
-            float result = 0;
-            try { if (operator == '+') {
-                result = num1 + num2;
-            } else if (operator == '-') {
-                result = num1 - num2;
-            } else if (operator == '*') {
-                result = num1 * num2;
-            } else if (operator == '/') {
-                result = num1 / num2;
-            } else {
-                System.out.println("Invalid operator!");
-                return;
-            }
-                System.out.println("Result: " + result);
-            }catch (Exception e) {
-                System.out.println("Invalid operator!");
-            }
-        }
+    public int add(int a, int b) {
+        return a + b;
     }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public int divide(int a, int b) {
+        return a / b;
+    }
+}
+//public void main(String[] args) {
+//    Scanner s = new Scanner(System.in);
+//    Calculator40 c;
+//    c = new Calculator40();
+//    try {
+//        System.out.println("Enter first number: ");
+//        int fNumber = s.nextInt();
+//        System.out.println("Enter second number");
+//        int sNumber = s.nextInt();
+//        System.out.println("Enter operator:");
+//        char operator = s.next().charAt(0);
+//        int result = 0;
+//        if (operator == '+') {
+//            result = c.add(fNumber, sNumber);
+//        } else if (operator == '-') {
+//            result = c.subtract(fNumber, sNumber);
+//        } else if (operator == '*') {
+//            result = c.multiply(fNumber, sNumber);
+//        } else if (operator == '/') {
+//            result = c.divide(fNumber, sNumber);
+//        } else {
+//            System.out.println("Invalid operator!");
+//        }
+//        System.out.println("result: " + result);
+//    } catch (Exception e) }
+
 
